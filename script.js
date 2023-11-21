@@ -41,24 +41,6 @@ const features = {
   },
 }
 
-const updateFeature = (feature) => {
-  feature.addEventListener('click', () => {
-    featureImages.forEach(image => {
-      image.src = features[feature.dataset.feature].image;
-    });
-    featureTitles.forEach(title => {
-      title.innerHTML = features[feature.dataset.feature].title;
-    });
-    featureDescriptions.forEach(description => {
-      description.innerHTML = features[feature.dataset.feature].description;
-    });
-  }
-)
-}
-
-updateFeature(veild);
-updateFeature(karma);
-updateFeature(persona);
 
 function updateFeatureDetails(featureName) {
   const feature = features[featureName];
