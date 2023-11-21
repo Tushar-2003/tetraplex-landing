@@ -22,22 +22,22 @@ const features = {
   veild: {
     title: 'Veild',
     description: 'Veild is a psudo anonymous, and privacy-focused Chat Mechanism to promote discussion of ideas in a civil manner.',
-    image: '/assets/veild.svg'
+    image: 'assets/veild.svg'
   },
   karma: {
     title: 'Karma',
     description: 'karma is a point system to moderate users and promote good behaviour.',
-    image: '/assets/karma.svg'
+    image: 'assets/karma.svg'
   },
   persona: {
     title: 'Persona',
     description: 'Persona is a way to create a unique identity for yourself, be anyone you want and be anonymous.',
-    image: '/assets/persona.svg'
+    image: 'assets/persona.svg'
   },
   concierge: {
     title: 'Concierge',
     description: 'Concierge is a way to get help from our AI assistant, and get your questions answered regarding anything on the platform.',
-    image: '/assets/concierge.svg'
+    image: 'assets/concierge.svg'
   },
 }
 
