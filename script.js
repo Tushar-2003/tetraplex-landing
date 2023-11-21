@@ -1,28 +1,41 @@
-let slideIndex = 1;
-showSlides(slideIndex);
 
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+// navbar logic
+const hamburgerMenu = document.querySelector('.hamburger-menu');
+const menuItems = document.querySelector('.menu-items');
+
+hamburgerMenu.addEventListener('click', () => {
+  menuItems.classList.toggle('show');
+});
+
+// features logic
+
+const featuresDiplay = document.querySelectorAll('.features');
+const featureImages = document.querySelectorAll('.feature-display-image');
+const featureTitles = document.querySelectorAll('.feature-display-title');
+const featureDescriptions = document.querySelectorAll('.feature-display-desc');
+
+
+const features = {
+  veild: {
+    title: 'Veild',
+    description: 'Veild is a psudo anonymous, and privacy-focused Chat Mechanizm to promote discussion of ideas.',
+    image: '../assets/veild.svg'
+  },
+  karma: {
+    title: 'Karma',
+    description: 'Karma is a decentralized, peer-to-peer, and pseudo anonymous social media platform.',
+    image: '../assets/karma.svg'
+  },
+  persona: {
+    title: 'Persona',
+    description: 'Persona is a decentralized, peer-to-peer, and pseudo anonymous social media platform.',
+    image: '../assets/persona.svg'
+  },
+  concierge: {
+    title: 'Concierge',
+    description: 'Concierge is a decentralized, peer-to-peer, and pseudo anonymous social media platform.',
+    image: '../assets/concierge.svg'
+  },
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-} 
+console.log(features.veild.description)
