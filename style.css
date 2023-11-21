@@ -79,6 +79,10 @@ nav {
 
 /* navbar small screen */
 @media screen and (max-width: 768px) {
+  nav {
+    position: fixed;
+    width: 100%;
+  }
   .menu-items {
     display: none;
   }
@@ -220,7 +224,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #85FFC7;
+  background-color: var(--primary-color);
 }
 .about-heading {
   font-size: 5rem;
@@ -272,7 +276,9 @@ nav {
 .feature-list{
   font-size: 1.8rem;
   font-weight: bold;
-  border: black 2px solid;
+  border-right: var(--tertiary-color) 2px solid;
+  border-top: var(--tertiary-color) 2px solid;
+  border-bottom: var(--tertiary-color) 2px solid;
   flex-basis: 20rem;
   height: 40rem;
   display: flex;
@@ -386,7 +392,7 @@ nav {
   background-color: var(--primary-color);
 }
 .team-heading {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: var(--tertiary-color);
   margin: 0;
@@ -404,7 +410,7 @@ nav {
 .team-member{
   background-color: var(--background-color);
   text-align: center;
-  border: #021127 2px solid;
+  border: var(--tertiary-color) 2px solid;
   border-radius: 5%;
   min-width: 25rem;
   max-width: 30rem;
@@ -413,6 +419,7 @@ nav {
 }
 
 .team-member-img {
+  border: var(--tertiary-color) 3px solid;
   height: 15rem;
   width: 15rem;
   border-radius: 10%;
@@ -420,12 +427,23 @@ nav {
 }
 
 .team-member-name {
+  position: relative;
   font-size: 2.5rem;
   font-weight: bold;
   color: var(--tertiary-color);
   margin: 0;
   text-align: center;
   margin-top: 1rem;
+}
+
+.team-member-name:before {
+  content: "";
+  position: absolute;
+  left:25%;
+  bottom: 0;
+  height: 1px;
+  width: 50%;  /* or 100px */
+  border-bottom:2px solid var(--tertiary-color);
 }
 
 .team-member-title {
@@ -438,7 +456,6 @@ nav {
 }
 
 .team-member-desc {
-  border: #021127 2px solid;
   font-size: 1.5rem;
   color: var(--tertiary-color);
   margin: 0;
@@ -456,6 +473,13 @@ nav {
   height: 3rem;
   margin: 0 1rem;
 }
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+}
+
+
 
 
 

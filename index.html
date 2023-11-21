@@ -21,11 +21,11 @@
 </head>
 <body>
   <!-- body -->
-  <!-- use variables for colors maximum 4 colors. for background use #F6F4F4, for fonts use #021127 and for anything else use #85FFC7 or #09814A -->
 
   <!-- Navbar -->
-  <!-- left side icon, right side menu items fixed to the top -->
-  <nav>
+  <span id="home"></span>
+
+  <nav id="nav">
     <div class="logo-icon">
       <a href="#home">
        <img src="assets/tetraplex.png" alt="tetraplex logo" />
@@ -36,16 +36,16 @@
       <a href="#home">
         <li>Home</li>
       </a>
-      <a href="">
+      <a href="#about">
         <li>About</li>
       </a>
-      <a href="">
+      <a href="#features">
         <li>Features</li>
       </a>
-      <a href="">
+      <a href="#team">
         <li>Team</li>
       </a>
-      <a href="">
+      <a href="#home">
         <li>Subscribe</li>
       </a>
     </ul>
@@ -58,9 +58,7 @@
 
 
   <!-- Home -->
-  <!-- left side should have the div home-left, content should be big with 1 button and link on side of it. the image should be on the right side, offscreeen, only have should be visible. in smaller - remove the image keep everthing center, text then button then link -->
-
-  <main class="home" id="home">
+  <main class="home">
     <div class="home-left">
       <h1 class="home-heading">Tetraplex</h1>
       <div class="home-action">
@@ -72,49 +70,47 @@
   </main>
 
   <!-- About -->
-  <!-- center everything in about section give decent space betweeen each item -->
   <section class="about" id="about">
     <h1 class="about-heading">What is Tetraplex?</h1>
     <p class="about-paragraph"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perferendis? Fuga deserunt officia cum et, omnis alias unde praesentium, quasi quo nemo doloremque amet magnam! Excepturi quasi sunt architecto quo. </p>
   </section>
 
   <!-- Features -->
-  <!-- left side should have a list of features and right side should have a display of the feature, it should have an image(icon), title of the feautre, a small para -->
-  <h1 class="features-heading">Features</h1>
+  <h1 class="features-heading" id="features">Essential Pillars(Features) of Tetraplex</h1>
   <section class="features" id="feature">
     <div class="feature-list">
-      <div class="feature-1 feature-item" onclick="">
-        <img src="assets/veild.svg" alt="" srcset="">
+      <div class="feature-1 feature-item" onclick=" change1()">
+        <img src="assets/veild.svg" alt="" >
         Veild
       </div>
       <div class="feature-2 feature-item">
-        <img src="assets/karma.svg" alt="" srcset="">
+        <img src="assets/karma.svg" alt="karma logo" >
         Karma
       </div>
       <div class="feature-3 feature-item">
-        <img src="assets/persona.svg" alt="" srcset="">
+        <img src="assets/persona.svg" alt="persona logo" >
         Persona
       </div>
       <div class="feature-4 feature-item">
-        <img src="assets/concierge.svg" alt="" srcset="">
+        <img src="assets/concierge.svg" alt="concierge logo" >
         concierge
       </div>
     </div>
     <div class="feature-display">
         <img src="assets/veild.svg" class="feature-display-image">
         <h2 class="feature-disply-title">Veild</h2>
-        <p class="feature-display-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, perferendis? Fuga deserunt officia cum et, omnis alias unde praesentium, quasi quo nemo doloremque amet magnam! Excepturi quasi sunt architecto quo.</p>
+        <p class="feature-display-desc">Veild is a psudo anonymous, and privacy-focused Chat Mechanism to promote discussion of ideas in a civil manner.</p>
     </div>
   </section>
 
 
  
   <!-- Preview -->
-  <!-- after mvp is over -->
+  <!-- after mvp is made -->
    
   <!-- Team -->
-  <section class="team">
-    <h1 class="team-heading"> Meet our Talented Team</h1>
+  <section class="team" id="team">
+    <h1 class="team-heading"> Meet our <i>Talented</i> Team</h1>
     <div class="team-members">
       <div class="team-member">
         <img class="team-member-img" src="assets/team/anselm.jpg" alt="">
@@ -139,9 +135,9 @@
       <div class="team-member">
         <img class="team-member-img" src="assets/team/joel.jpg" alt="">
         <div class="team-member-info">
-          <h2 class="team-member-name">John Doe</h2>
-          <p class="team-member-title">Founder & CEO</p>
-          <p class="team-member-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <h2 class="team-member-name">Joel alcarez</h2>
+          <p class="team-member-title">Co-Founder, CSO, Interim CTO</p>
+          <p class="team-member-desc">Lorem ipsum dolor sit amet consectetur adipisicing.20+ yrs in IT, Done startups previously.</p>
           <p class="team-member-social">
             <a href="">
               <img src="assets/github.svg" alt="">
@@ -159,9 +155,9 @@
       <div class="team-member">
         <img class="team-member-img" src="assets/team/sarah.jpg" alt="">
         <div class="team-member-info">
-          <h2 class="team-member-name">John Doe</h2>
+          <h2 class="team-member-name">Sarah geiselhart</h2>
           <p class="team-member-title">Founder & CEO</p>
-          <p class="team-member-desc">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+          <p class="team-member-desc">Bachelor of Sci, 3 yrs in Industry as QA and Executive Assistant.</p>
           <p class="team-member-social">
             <a href="">
               <img src="assets/github.svg" alt="">
@@ -192,8 +188,10 @@
 
   <!-- Footer -->
   <!-- todo -->
-  <!-- need more infrmation needed to add in footer -->
-  footer> 
+  <!-- need more information needed to add in footer -->
+  <footer>
+    <p>made with  ❤️ by tetraplex team</p>
+  </footer>
 
 
 
